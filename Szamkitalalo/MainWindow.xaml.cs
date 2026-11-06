@@ -38,17 +38,20 @@ namespace Szamkitalalo
                 {
                     proba++;
 
-                    lista.Items.Add(tipp);
+
                     if (tipp < gondoltSzam)
                     {
+                        lista.Items.Add(tipp + " Kisebb");
                         MessageBox.Show("A gondolt szám nagyobb!");
                     }
                     else if (tipp > gondoltSzam)
                     {
+                        lista.Items.Add(tipp + " Nagyobb");
                         MessageBox.Show("A gondolt szám kisebb!");
                     }
                     else
                     {
+                        lista.Items.Add(tipp + " Eltaláltad");
                         MessageBox.Show($"Kitaláltad a számot {proba} próbálkozásból!");
                     }
                 }
